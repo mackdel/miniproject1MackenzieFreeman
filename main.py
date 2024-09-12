@@ -8,6 +8,9 @@ from datetime import datetime, timedelta
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Make charts folder if there is not one already
+os.makedirs("charts", exist_ok=True)
+
 # 5 stock tickers
 mytickers = ["MSFT", "AAPL", "NVDA", "GME", "AMC"]
 # marvell is MRVL
