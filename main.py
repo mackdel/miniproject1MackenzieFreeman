@@ -2,7 +2,6 @@
 # Mackenzie Freeman
 # Mini Project 1
 import os
-import pprint
 import yfinance as yf
 from datetime import datetime, timedelta
 import numpy as np
@@ -21,9 +20,8 @@ mytickers = ["MSFT", "AAPL", "NVDA", "GME", "AMC"]
 today = datetime.now()
 
 # Calculate the date 10 days ago
-ten_days_ago = today - timedelta(days=14)
+ten_days_ago = today - timedelta(days=15)
 
-mytickers.sort()
 for ticker in mytickers:
     # Collect the closing price of the stock tickers
     # for the last 10 trading days.
